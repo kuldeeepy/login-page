@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url("images/starlink-bg1.jpeg");
+    background-size: cover;
+    background-position: bottom, right;
+    background-repeat: none;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid #FEF5FA;
+    
+    
+    justify-content: center;
+    
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600px;
+    color: #FEF5FA;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #FEF5FA;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #FEF5FA;
+    font-size: 1em;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    color: #FEF5FA;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background: transparent;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #FEF5FA;
+    font-size: .9em;
+    line-height: 57px;
+}
+
+.remember-forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    display: flex;
+    color: #FEF5FA;
+    justify-content: space-between;
+}
+
+.remember-forget {
+    margin-right: 3px;
+    color: #FEF5FA;
+}
+
+.remember-forget a {
+    color: #FEF5FA;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    color: #FEF5FA;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;  
+    border: none;
+    outline: none; 
+    background: #FEF5FA;
+    border-radius: 40px;
+}
+
+.register-link {
+    margin: 25px 0 10px;
+    font-size: .9em;
+    color: #FEF5FA;
+    text-align: center
+}
+
+.register-link p a {
+    color: #FEF5FA;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    
+}
+
+@media (max-width: 360px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .input-box {
+        width: 290px;
+    }
+}
